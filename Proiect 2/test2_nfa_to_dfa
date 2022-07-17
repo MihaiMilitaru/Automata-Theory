@@ -1,0 +1,27 @@
+# main config file
+# comment 1
+# comment 2
+Sigma:
+  a
+  b #asf
+  #asf
+End# asf
+#asf
+States:#asf
+#asf
+  q0, S
+  #asf
+  q1
+  q2, F #asf
+  #asf
+End
+Transitions: #asf
+  q0, a, q0
+  q0, b, q0 #asf
+  q0, b, q1
+  q1, a, q2
+  q1, b, q2 #   asf
+  #asf
+End #  asf
+
+#asf

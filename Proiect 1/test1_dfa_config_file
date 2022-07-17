@@ -1,0 +1,33 @@
+# main config file
+# comment 1
+# comment 2
+Sigma: #aaaabbbbbbb
+  a
+  b
+  c
+  #asdasd
+End
+# test1
+States:
+  q0, S, F#gfkpgkgg
+  q1
+  q2#saaa
+  #gaaa
+  q3
+  q4, F # aa
+  q5
+  #asdasd
+End
+Transitions:
+  q0, a, q1
+  q0, b, q2
+  q0, c, q3
+  q1, b, q2
+  q1, c, q4
+  q2, a, q3
+  q2, b, q4
+  q3, a, q4 #salut
+  q4, a, q5
+  q5, a, q4
+  # ggdfdg
+End

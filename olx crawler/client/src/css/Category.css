@@ -1,0 +1,47 @@
+@import url(./global.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.Category {
+  border: 3px solid var(--clr-secondary);
+  text-align: center;
+  width: 500px;
+  /* height: 300px; */
+  display: grid;
+  place-items: center center;
+  border-radius: 12px;
+  position: relative;
+}
+
+.Category__title {
+  text-transform: capitalize;
+}
+
+.Category__list__item {
+  list-style: none;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.Category__list__item__count {
+  font-weight: 700;
+}
+
+.Category__list__show {
+  padding: 8px 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+  border-right: 3px solid var(--clr-secondary);
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+  outline: none;
+  font-size: 24px;
+}
+
+.Category__list__show:hover {
+  cursor: pointer;
+}

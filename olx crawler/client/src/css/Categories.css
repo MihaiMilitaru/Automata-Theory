@@ -1,0 +1,11 @@
+@import url("./global.css");
+
+.Categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

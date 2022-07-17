@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: rgb(0, 32, 63);
+  --clr-secondary: rgb(173, 239, 209);
+}

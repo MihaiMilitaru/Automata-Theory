@@ -1,0 +1,98 @@
+# ECHIPA
+# Grupa 143
+# Florea Madalin-Alexandru
+# Besliu Radu-Stefan
+# Militaru Mihai-Alexandru
+#
+# L = {w+w | where w is a string} over the alphabet {0, 1}
+States:
+	q1
+	q2
+	q3
+	q4
+	q5
+	q6
+	q7
+	q8
+	q_accept
+	q_reject
+END
+Sigma:
+	0
+	1
+	+
+End
+Gamma:
+	0
+	1
+	x
+	+
+	_
+	e
+End
+Transitions:
+	q1 q2 0 x R
+	q1 q3 1 x R
+	q1 q8 + e R
+	q1 q_reject x e R
+	q1 q_reject e e R
+	q1 q_reject _ e R
+
+	q2 q2 0 e R
+	q2 q2 1 e R
+	q2 q4 + e R
+	q2 q_reject x e R
+	q2 q_reject e e R
+	q2 q_reject _ e R
+
+	q3 q3 0 e R
+	q3 q3 1 e R
+	q3 q5 + e R
+	q3 q_reject x e R
+	q3 q_reject e e R
+	q3 q_reject _ e R
+
+	q4 q4 x e R
+	q4 q6 0 x L
+	q4 q_reject 1 e R
+	q4 q_reject + e R
+	q4 q_reject e e R
+	q4 q_reject _ e R
+
+	q5 q5 x e R
+	q5 q6 1 x L
+	q5 q_reject + e R
+	q5 q_reject 0 e R
+	q5 q_reject e e R
+	q5 q_reject _ e R
+
+	q6 q6 0 e L
+	q6 q6 1 e L
+	q6 q6 x e L
+	q6 q_reject e e R
+	q6 q7 + e R
+	q6 q_reject _ e R
+
+	q7 q7 0 e L
+	q7 q7 1 e L
+	q7 q1 x e R
+	q7 q_reject + e R
+	q7 q_reject e e R
+	q7 q_reject _ e R
+
+	q8 q8 x e R
+	q8 q_reject e e R
+	q8 q_accept _ e R
+	q8 q_reject 0 e R
+	q8 q_reject 1 e R
+	q8 q_reject + e R
+End
+Start state:
+    q1
+End
+Accept state:
+    q_accept
+End
+Reject state:
+    q_reject
+End
