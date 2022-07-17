@@ -1,5 +1,5 @@
 # Automata-Theory
-This repo contains the following:
+This repository contains the following:
 - DFA validation
 - NFA validation
 - convertion of a NFA into a DFA
